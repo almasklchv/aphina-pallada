@@ -11,8 +11,8 @@ let openOrCloseMenu = () => {
 
 let updateVisibleItems = () => {
     const parentWidth = document.body.clientWidth - 102.8;
-    let visibleItems = Math.floor(parentWidth / 329);
-    let courses = document.querySelector(".courses");
+    const visibleItems = Math.floor(parentWidth / 329);
+    const courses = document.querySelector(".courses");
     
     
     for (let i = visibleItems; i < courses.children.length; i++) {
@@ -33,7 +33,9 @@ let updateVisibleItems = () => {
     
 }
 
-
+let nextSlide = () => {
+    const courses = document.querySelector(".courses");
+}
 
 document.querySelector('.dropdown-menu').addEventListener('click', openOrCloseMenu);
 
