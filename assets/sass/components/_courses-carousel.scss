@@ -1,7 +1,7 @@
 .left-btn {
     position: relative;
     cursor: pointer;
-    margin-left: 16px;
+    margin-left: 13px;
     margin-top: 70px;
     float: left;
     width: 16.4px;
@@ -13,7 +13,7 @@
 .right-btn {
     position: relative;
     cursor: pointer;
-    margin-right: 16px;
+    margin-right: 13px;
     margin-top: -132px;
     top: 202px;
     float: right;
@@ -22,9 +22,22 @@
     background: url('../icons/right-btn.svg');
 }
 
-.courses {
+.popular-courses, .new-courses {
     display: flex;
     justify-content: center;
+    margin-bottom: 66px;
+}
+
+.all-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 32px;
+    margin-bottom: 62px;
+    .course {
+        margin-bottom: 18px;
+    }
 }
 
 .course {

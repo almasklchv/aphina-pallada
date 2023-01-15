@@ -9,23 +9,22 @@ let openOrCloseMenu = () => {
 
 }
 
-let updateVisibleItems = () => {
+let updateVisibleItems = (items) => {
     const parentWidth = document.body.clientWidth - 102.8;
     const visibleItems = Math.floor(parentWidth / 329);
-    const courses = document.querySelector(".courses");
     
     
-    for (let i = visibleItems; i < courses.children.length; i++) {
-        courses.children[i].classList.remove('active')
-        courses.children[i].classList.remove('hidden')
-        courses.children[i].classList.add('hidden')
+    for (let i = visibleItems; i < items.children.length; i++) {
+        items.children[i].classList.remove('active')
+        items.children[i].classList.remove('hidden')
+        items.children[i].classList.add('hidden')
     }
 
-    for (let i = 0; i < courses.children.length; i++) {
+    for (let i = 0; i < items.children.length; i++) {
         if (i < visibleItems) {
-            courses.children[i].classList.remove('hidden')
-            courses.children[i].classList.remove('active')
-            courses.children[i].classList.add('active')
+            items.children[i].classList.remove('hidden')
+            items.children[i].classList.remove('active')
+            items.children[i].classList.add('active')
         } else {
             break;
         }
@@ -33,12 +32,30 @@ let updateVisibleItems = () => {
     
 }
 
+
+
 let nextSlide = () => {
     const courses = document.querySelector(".courses");
 }
 
 document.querySelector('.dropdown-menu').addEventListener('click', openOrCloseMenu);
 
-document.addEventListener('DOMContentLoaded', updateVisibleItems);
+document.addEventListener('DOMContentLoaded', () => {
+    const courses = document.querySelector(".popular-courses");
+    updateVisibleItems(courses)
+});
 
-window.addEventListener("resize", updateVisibleItems);
+document.addEventListener('DOMContentLoaded', () => {
+    const courses = document.querySelector(".new-courses");
+    updateVisibleItems(courses)
+});
+
+window.addEventListener("resize", () => {
+    const courses = document.querySelector(".popular-courses");
+    updateVisibleItems(courses)
+});
+
+window.addEventListener("resize", () => {
+    const courses = document.querySelector(".new-courses");
+    updateVisibleItems(courses)
+});

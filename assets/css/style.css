@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../fonts/fonts.css';
 body {
   background: #0F0F0F;
@@ -187,10 +188,75 @@ a:hover .header_text {
   background: url("../icons/login_ico.svg");
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .left {
+  display: flex;
+}
+footer .right {
+  display: flex;
+  position: relative;
+  top: -9px;
+  right: 51px;
+}
+footer .right p {
+  opacity: 60%;
+  margin-left: 32px;
+}
+footer .logo {
+  top: -19px;
+  margin-left: 40px;
+  margin-right: 25px;
+}
+footer .menu li {
+  margin-right: 39px;
+  font-weight: 500;
+  font-size: 15px;
+  opacity: 60%;
+}
+
+.social-media-group {
+  display: flex;
+  margin-top: 22px;
+}
+
+.social-media-group__item {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.tiktok_ico {
+  background: url("../icons/footer/static/tiktok_ico.svg");
+}
+
+.tiktok_ico:hover {
+  background: url("../icons/footer/hover/tiktok_ico.png");
+}
+
+.vk_ico {
+  background: url("../icons/footer/static/vk_ico.svg");
+}
+
+.vk_ico:hover {
+  background: url("../icons/footer/hover/vk_ico.png");
+}
+
+.instagram_ico {
+  background: url("../icons/footer/static/instagram_ico.svg");
+}
+
+.instagram_ico:hover {
+  background: url("../icons/footer/hover/instagram_ico.png");
+}
+
 .left-btn {
   position: relative;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: 13px;
   margin-top: 70px;
   float: left;
   width: 16.4px;
@@ -202,7 +268,7 @@ a:hover .header_text {
 .right-btn {
   position: relative;
   cursor: pointer;
-  margin-right: 16px;
+  margin-right: 13px;
   margin-top: -132px;
   top: 202px;
   float: right;
@@ -211,9 +277,22 @@ a:hover .header_text {
   background: url("../icons/right-btn.svg");
 }
 
-.courses {
+.popular-courses, .new-courses {
   display: flex;
   justify-content: center;
+  margin-bottom: 66px;
+}
+
+.all-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 32px;
+  margin-bottom: 62px;
+}
+.all-courses .course {
+  margin-bottom: 18px;
 }
 
 .course {
@@ -250,6 +329,59 @@ a:hover .header_text {
   line-height: 20px;
   color: #FFFFFF;
   opacity: 0.6;
+}
+
+.mega-banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 95%;
+  max-height: 590px;
+  background: #EF5350;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.mega-banner .left h2 {
+  padding: 0;
+  margin: 0;
+  margin-right: 119px;
+  margin-top: -39px;
+}
+.mega-banner .right {
+  display: flex;
+  align-items: center;
+}
+.mega-banner h2 {
+  float: right;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+.mega-banner p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+}
+.mega-banner .right {
+  float: right;
+}
+
+.mega-banner__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.cent::before {
+  content: "Найди же свой курс)";
+  font-size: 32px;
 }
 
 @media (min-width: 1513px) {
