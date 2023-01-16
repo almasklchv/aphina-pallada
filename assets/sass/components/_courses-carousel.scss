@@ -1,7 +1,8 @@
 .left-btn {
     position: relative;
     cursor: pointer;
-    margin-left: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 70px;
     float: left;
     width: 16.4px;
@@ -20,11 +21,18 @@
     width: 16.4px;
     height: 45px;
     background: url('../icons/right-btn.svg');
+    z-index: 10;
+}
+
+.courses-carousel {
+    margin: 0 auto;
 }
 
 .popular-courses, .new-courses {
     display: flex;
-    justify-content: center;
+    position: relative;
+    left: 0;
+    transition: all 0.5s ease-in-out;
     margin-bottom: 66px;
 }
 
@@ -33,7 +41,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    margin-left: 32px;
+    margin-left: 42px;
     margin-bottom: 62px;
     .course {
         margin-bottom: 18px;
@@ -41,15 +49,14 @@
 }
 
 .course {
+    height: 255px;
     margin-right: 30px;
     transition: all 0.5s ease-in-out;
 }
 
 .course__preview {
-    width: 329px;
     height: 185px;
     border-radius: 20px;
-    border: 1px solid rgba(217,217,217, 0.2);
 }
 
 .course__title {
