@@ -188,6 +188,37 @@ a:hover .header_text {
   background: url("../icons/login_ico.svg");
 }
 
+.account {
+  margin-left: auto;
+  margin-right: 52px;
+  margin-top: 10px;
+  display: flex;
+}
+.account p {
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+.account p:hover {
+  color: #EF5350;
+}
+
+.account_ico {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 24px;
+  background: url("../icons/account_ico.png");
+}
+
+.account_ico:hover {
+  background: url("../icons/account_ico-hover.png");
+}
+
 footer {
   display: flex;
   justify-content: space-between;

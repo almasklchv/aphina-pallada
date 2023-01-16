@@ -14,23 +14,6 @@ let updateVisibleItems = (item) => {
     const visibleItems = Math.floor(parentWidth / 329);
     item.style.width = (visibleItems * 359) + 'px';
     item.style.overflow = 'hidden';
-    
-    /*for (let i = visibleItems; i < items.children.length; i++) {
-        items.children[i].classList.remove('active')
-        items.children[i].classList.remove('hidden')
-        items.children[i].classList.add('hidden')
-    }
-
-    for (let i = 0; i < items.children.length; i++) {
-        if (i < visibleItems) {
-            items.children[i].classList.remove('hidden')
-            items.children[i].classList.remove('active')
-            items.children[i].classList.add('active')
-        } else {
-            break;
-        }
-    }*/
-    
 }
 
 
