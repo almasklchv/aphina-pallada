@@ -1,14 +1,45 @@
 body {
     background: #0F0F0F;
-  }
-  
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
 .title {
-      font-family: 'Montserrat';
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 39px;
-      color: #FFFFFF;
-      opacity: 0.87;
-      margin-left: 50px;
-      margin-top: 15px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  opacity: 0.87;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 190px;
+  height: 56.92px;
+  background: #0F0F0F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.btn_transparent {
+  width: 306px;
+  border: 3px solid #FFFFFF;
+  background: transparent;
 }

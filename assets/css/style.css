@@ -4,6 +4,15 @@ body {
   background: #0F0F0F;
 }
 
+h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
 .title {
   font-family: "Montserrat";
   font-weight: 700;
@@ -13,6 +22,27 @@ body {
   opacity: 0.87;
   margin-left: 50px;
   margin-top: 15px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 190px;
+  height: 56.92px;
+  background: #0F0F0F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.btn_transparent {
+  width: 306px;
+  border: 3px solid #FFFFFF;
+  background: transparent;
 }
 
 .header {
@@ -191,7 +221,7 @@ a:hover .header_text {
 .account {
   margin-left: auto;
   margin-right: 52px;
-  margin-top: 10px;
+  margin-top: 14px;
   display: flex;
 }
 .account p {
@@ -222,6 +252,8 @@ a:hover .header_text {
 footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -1px;
+  padding-top: 22px;
 }
 footer .left {
   display: flex;
@@ -365,8 +397,7 @@ footer .menu li {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .mega-banner {
@@ -493,6 +524,336 @@ footer .menu li {
 .form__btn:hover {
   border: 1px solid #fff;
   transition: all 0.5s;
+}
+
+.course__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.87;
+}
+
+.course__likes {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.left .course__likes::before {
+  float: left;
+  content: "";
+  width: 28.32px;
+  height: 30.31px;
+  margin-top: -8px;
+  margin-right: 7px;
+  background-image: url("../icons/star.svg");
+}
+
+.course__poster {
+  width: 658px;
+  height: 370px;
+  margin-top: 33px;
+  position: relative;
+  left: 31px;
+}
+
+.course__poster img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-player {
+  width: 658px;
+  height: 370px;
+  border-radius: 32px;
+}
+
+.control {
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play {
+  z-index: 10;
+  background: url("../icons/play-video.svg");
+}
+
+.pause {
+  z-index: 10;
+  background: url("../icons/pause-video.svg");
+}
+
+.course-welcome {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 36px;
+}
+.course-welcome .left {
+  margin-left: 111px;
+  margin-right: 17px;
+}
+.course-welcome .left h1 {
+  margin-bottom: -8px;
+}
+.course-welcome .right {
+  margin-right: 113px;
+}
+
+.course-program {
+  margin-left: 111px;
+  margin-top: -66px;
+}
+.course-program .title {
+  margin: 0;
+}
+
+.course-program__content {
+  margin-top: 43px;
+  margin-left: -9px;
+  padding-top: 8px;
+  padding-left: 29px;
+  max-width: 520px;
+  height: 509px;
+  background: #1B1A1D;
+  border-radius: 20px;
+}
+
+.course-program__name {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.course-program__name::before {
+  content: "";
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 14px;
+  margin-top: -3px;
+  background: url("../icons/play-video-30px.svg");
+}
+
+.course-reviews {
+  margin-left: 111px;
+  margin-top: 16px;
+  margin-bottom: 87px;
+}
+.course-reviews .title {
+  margin: 0;
+}
+
+.course-review::before {
+  content: "";
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-right: 13px;
+  margin-top: 5px;
+  background: url("../icons/avatar.png");
+}
+
+.review-name {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: -12px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.review {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.premium-welcome {
+  margin-top: -35px;
+  padding-left: 111px;
+  padding-bottom: 101px;
+  background: #1D75DE;
+}
+
+.premium-welcome__title {
+  padding-top: 101px;
+  margin-bottom: -4px;
+  font-size: 48px;
+}
+
+.premium-welcome__description {
+  max-width: 969px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  opacity: 0.87;
+}
+
+.welcome__btns {
+  margin-top: 41px;
+}
+.welcome__btns .btn {
+  margin-right: 30px;
+}
+
+.premium-for-what {
+  position: relative;
+  padding-top: 154px;
+  padding-bottom: 200px;
+  margin-top: -40px;
+  background: #FFFFFF;
+}
+.premium-for-what h2 {
+  position: absolute;
+  margin-top: -110px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #0F0F0F;
+}
+
+.for-what__items {
+  display: flex;
+  justify-content: center;
+}
+
+.for-what__item {
+  position: relative;
+  margin-right: 124px;
+}
+.for-what__item img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.for-what__item:last-child {
+  margin-right: 0;
+}
+
+.for-what__item-text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+  margin-top: 151px;
+}
+
+.subscription {
+  position: relative;
+  margin-top: -37px;
+  padding-bottom: 192px;
+  background: #DEDEDE;
+}
+.subscription h2 {
+  position: absolute;
+  margin-top: 34px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #0F0F0F;
+}
+
+.subscription__description {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.87;
+  padding-top: 93px;
+  margin: 0 auto;
+}
+
+.subscription__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription__card {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  top: 150px;
+  width: 350px;
+  height: 450px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.subscription__card hr {
+  width: 300px;
+  background: #0F0F0F;
+}
+.subscription__card .btn {
+  width: 310px;
+  height: 46px;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 128px;
+}
+
+.subscription__title {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+  padding-top: 16px;
+  margin-left: 50px;
+}
+
+.subscription__price {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-top: -42px;
+  margin-left: 50px;
+}
+
+.subscription__benefits {
+  margin-top: -7px;
+}
+.subscription__benefits p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 1;
+}
+.subscription__benefits p::before {
+  content: "";
+  float: left;
+  width: 22px;
+  height: 19px;
+  margin-right: 10px;
+  background: url("../icons/mark.png");
 }
 
 @media (min-width: 1513px) {
