@@ -3,7 +3,8 @@
     cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 70px;
+    margin-top: -72px;
+    top: 133px;
     float: left;
     width: 16.4px;
     height: 45px;
@@ -26,6 +27,7 @@
 
 .courses-carousel {
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .popular-courses, .new-courses {
@@ -34,6 +36,7 @@
     left: 0;
     transition: all 0.5s ease-in-out;
     margin-bottom: 66px;
+    margin-right: -30px;
 }
 
 .all-courses {
@@ -41,7 +44,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-    margin-left: 42px;
     margin-bottom: 62px;
     .course {
         margin-bottom: 18px;
@@ -53,6 +55,7 @@
     margin-right: 30px;
     transition: all 0.5s ease-in-out;
 }
+
 
 .course__preview {
     height: 185px;

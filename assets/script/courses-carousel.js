@@ -1,10 +1,34 @@
 let updateVisibleItems = (item) => {
     const parentWidth = document.body.clientWidth - 102.8;
-    const visibleItems = Math.floor(parentWidth / 329);
-    item.style.width = (visibleItems * 359) + 'px';
-    item.style.overflow = 'hidden';
+    const visibleItems = Math.floor(parentWidth / 329); 
+    
+    if (parentWidth > 666.2) {
+        item.style.width = (visibleItems * 359) + 'px';
+        item.style.overflow = 'hidden';
+        item.children[0].style.flexWrap = "nowrap";
+    } else {
+        item.style.width = '100%';
+        item.style.overflow = '';
+        item.children[0].style.flexWrap = "wrap";
+    }
+    if (visibleItems <= 1) {
+        if (item.children[0].children[0].style.marginRight != '0px') {
+            item.children[0].style.marginRight = '0px';
+            for (let i = 0; i < item.children[0].children.length; i++) {
+                item.children[0].children[i].style.marginRight = '0';
+            }
+        }
+    }
+    
+    if (parentWidth >= 520.2) {
+        if (item.children[0].children[0].style.marginRight == '0px') {
+            item.children[0].style.marginRight = '-30px';
+            for (let i = 0; i < item.children[0].children.length; i++) {
+                item.children[0].children[i].style.marginRight = '30px  ';
+            }
+        }
+    }
 }
-
 
 
 let nextSlide = (item) => {
