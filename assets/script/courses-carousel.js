@@ -1,10 +1,13 @@
+let popularCourses = document.querySelector('.popular-courses');
+let newCourses = document.querySelector('.new-courses');
+
 export function updateVisibleItems (item) {
-    const parentWidth = document.body.clientWidth - 102.8;
+    const parentWidth = document.body.clientWidth - 92.8;
     const visibleItems = Math.floor(parentWidth / 329); 
-    
-    if (parentWidth > 666.2) {
+    if (parentWidth >= 692.2) {
         item.style.width = (visibleItems * 359) + 'px';
         item.style.overflow = 'hidden';
+        
         item.children[0].style.flexWrap = "nowrap";
     } else {
         item.style.width = '100%';
@@ -28,6 +31,17 @@ export function updateVisibleItems (item) {
             }
         }
     }
+    if (parentWidth <= 677.2) {
+        popularCourses.style.left = '';
+        newCourses.style.left = '';
+    }
+
+    if (parentWidth >= 253) {
+        for (let i = 0; i < item.children[0].children.length; i++) {
+            console.log(item.children[0].children[i].children)
+            item.children[0].children[i].style.marginRight = '30px';
+        }
+    }
 }
 
 
@@ -37,9 +51,9 @@ export function nextSlide (item) {
     const offset = visibleItems * 359;
     const left = parseInt(item.style.left);
     if (item.style.left) {
-        item.style.left = -(offset - left) + 'px';
+        item.style.left = -(offset - left)-26 + 'px';
     } else {
-        item.style.left = -(offset) + 'px';
+        item.style.left = -(offset)-26 + 'px';
     }
 
     if (Math.abs(left) + offset >= (item.children.length * 359)) {
@@ -53,11 +67,11 @@ export function prevSlide (item) {
     const offset = visibleItems * 359;
     const left = parseInt(item.style.left);
     if (item.style.left) {
-        item.style.left = left + offset + 'px';
+        item.style.left = left + offset + 26 + 'px';
     } else {
-        item.style.left = offset + 'px';
+        item.style.left = offset + 26 + 'px';
     }
-    console.log(left)
+    
     if ((left + offset) > 0  ) {
         item.style.left = 0;
     }
