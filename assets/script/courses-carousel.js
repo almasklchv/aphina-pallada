@@ -1,4 +1,4 @@
-let updateVisibleItems = (item) => {
+export function updateVisibleItems (item) {
     const parentWidth = document.body.clientWidth - 102.8;
     const visibleItems = Math.floor(parentWidth / 329); 
     
@@ -31,7 +31,7 @@ let updateVisibleItems = (item) => {
 }
 
 
-let nextSlide = (item) => {
+export function nextSlide (item) {
     const parentWidth = document.body.clientWidth - 102.8;
     const visibleItems = Math.floor(parentWidth / 329);
     const offset = visibleItems * 359;
@@ -47,7 +47,7 @@ let nextSlide = (item) => {
     }
 }
 
-let prevSlide = (item) => {
+export function prevSlide (item) {
     const parentWidth = document.body.clientWidth - 102.8;
     const visibleItems = Math.floor(parentWidth / 329);
     const offset = visibleItems * 359;
@@ -64,43 +64,37 @@ let prevSlide = (item) => {
 }
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    const courses = document.querySelectorAll(".courses-carousel")[0];
-    updateVisibleItems(courses)
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const courses = document.querySelectorAll(".courses-carousel")[1];
-    updateVisibleItems(courses)
-});
-
-window.addEventListener("resize", () => {
-    const courses = document.querySelectorAll(".courses-carousel")[0];
-    updateVisibleItems(courses)
-});
-
-window.addEventListener("resize", () => {
-    const courses = document.querySelectorAll(".courses-carousel")[1];
-    updateVisibleItems(courses)
-});
-
-document.querySelectorAll('.right-btn')[0].addEventListener('click', () => {
-    const courses = document.querySelector(".popular-courses");
-    nextSlide(courses)
-})
-
-document.querySelectorAll('.right-btn')[1].addEventListener('click', () => {
-    const courses = document.querySelector(".new-courses");
-    nextSlide(courses)
-})
-
-document.querySelectorAll('.left-btn')[0].addEventListener('click', () => {
-    const courses = document.querySelector(".popular-courses");
-    prevSlide(courses)
-})
-
-document.querySelectorAll('.left-btn')[1].addEventListener('click', () => {
-    const courses = document.querySelector(".new-courses");
-    prevSlide(courses)
-})
+export function addEventToCoursesCarousel() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const courses = document.querySelectorAll(".courses-carousel")[0];
+        updateVisibleItems(courses)
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const courses = document.querySelectorAll(".courses-carousel")[1];
+        updateVisibleItems(courses)
+    });
+    window.addEventListener("resize", () => {
+        const courses = document.querySelectorAll(".courses-carousel")[0];
+        updateVisibleItems(courses)
+    });
+    window.addEventListener("resize", () => {
+        const courses = document.querySelectorAll(".courses-carousel")[1];
+        updateVisibleItems(courses)
+    });
+    document.querySelectorAll('.right-btn')[0].addEventListener('click', () => {
+        const courses = document.querySelector(".popular-courses");
+        nextSlide(courses)
+    })
+    document.querySelectorAll('.right-btn')[1].addEventListener('click', () => {
+        const courses = document.querySelector(".new-courses");
+        nextSlide(courses)
+    })
+    document.querySelectorAll('.left-btn')[0].addEventListener('click', () => {
+        const courses = document.querySelector(".popular-courses");
+        prevSlide(courses)
+    })
+    document.querySelectorAll('.left-btn')[1].addEventListener('click', () => {
+        const courses = document.querySelector(".new-courses");
+        prevSlide(courses)
+    })
+}

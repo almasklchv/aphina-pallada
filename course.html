@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       type="image/x-icon"
-      href="../../assets/icons/favicon.png"
+      href="./assets/icons/favicon.png"
       rel="shortcut icon"
     />
     <link
       type="Image/x-icon"
-      href="../../assets/icons/favicon.png"
+      href="./assets/icons/favicon.png"
       rel="icon"
     />
     <title>Страница курса</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="logo"><a href="./">Aphina-Pallada</a></h1>
+      <h1 class="logo"><a href="/">Aphina-Pallada</a></h1>
       <!-- Логотип -->
 
       <div class="dropdown-menu">
@@ -55,11 +55,49 @@
         />
       </form>
 
+      <!-- Бургер меню - кнопка (появляется при размере <800px) -->
+      <div class="burger-icon">
+        <div class="burger-icon__line1"></div>
+        <div class="burger-icon__line2"></div>
+        <div class="burger-icon__line3"></div>
+      </div>
+
       <div class="account">
         <p>Оформить подписку</p>
         <span class="account_ico"></span>
       </div>
     </header>
+
+    <!-- Бургер меню -->
+    <div class="burger-menu">
+      <div class="burger-menu__content">
+        <div class="my-profile">
+          <img src="../../assets/images/my-profile_avatar.png" alt="Аватарка профиля" class="avatar">
+          <p class="my-profile__title">Мой профиль</p>
+          <div class="my-profile__bottom">
+            <a href="#" class="my-profile__edit">Редактировать </a>
+            <span class="line">| </span>
+            <a href="#" class="my-profile__logout">Выйти</a>
+          </div>
+        </div>
+        <form class="search-form show" action="#">
+          <!-- Форма поиска -->
+          <span class="search_ico"></span>
+          <input
+            type="text"
+            name="search"
+            id="search-form__input"
+            placeholder="Искать"
+            autocomplete="off"
+          />
+        </form>
+        <ul class="menu">
+          <li><a href="#">Программирование</a></li>
+          <li><a href="#">Дизайн</a></li>
+          <li><a href="#">Маркетинг</a></li>
+        </ul>
+      </div>
+    </div>
 
     <main>
       <div class="course-page">
@@ -75,9 +113,9 @@
           </div>
           <div class="right">
             <div class="course__poster">
-              <img class="poster" src="../../assets/images/preview.png" alt="Обложка к видео">
+              <img class="poster" src="./assets/images/preview.png" alt="Обложка к видео">
               <span class="control play"></span>
-              <video class="video-player" src="../../assets/video/первый рилс.mp4"></video>
+              <video class="video-player" src="./assets/video/первый рилс.mp4"></video>
             </div>
             
           </div>
@@ -121,9 +159,9 @@
 
     <footer>
       <div class="left">
-        <h1 class="logo"><a href="./">Aphina-Pallada</a></h1>
+        <h1 class="logo"><a href="/">Aphina-Pallada</a></h1>
         <ul class="menu">
-          <li><a href="#">Оформить подписку</a></li>
+          <li><a href="./premium.html">Оформить подписку</a></li>
           <li><a href="#">Выложить свой курс</a></li>
           <li><a href="#">О нас</a></li>
         </ul>
@@ -143,7 +181,6 @@
       </div>
     </footer>
 
-    <script src="../../../assets/script/base.js"></script>
-    <script src="../../assets/script/course-page.js"></script>
+    <script type="module" src="./assets/script/main.js"></script>
   </body>
 </html>

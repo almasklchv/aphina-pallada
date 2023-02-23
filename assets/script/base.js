@@ -1,4 +1,4 @@
-let openOrCloseMenu = () => {
+export function openOrCloseMenu() {
     const dropdownMenuContent = document.querySelector(".dropdown-menu__content");
     
     dropdownMenuContent.classList.toggle("active");
@@ -9,4 +9,7 @@ let openOrCloseMenu = () => {
 
 }
 
-document.querySelector('.dropdown-menu').addEventListener('click', openOrCloseMenu);
+export function toggleMenu() {
+    var icon = document.querySelector(".burger-icon");
+    icon.classList.toggle("open");
+}

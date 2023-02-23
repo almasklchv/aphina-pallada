@@ -8,6 +8,8 @@
     }
 }
 
+
+
 @media (max-width: 1313px) {
     .premium-for-what {
         padding-bottom: 165px;
@@ -302,6 +304,34 @@
     .logo {
         margin-left: 8.5px;
         font-size: 20px;
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    .search-form.show {
+        display: block;
+    }
+
+    .search-form {
+        margin: 0;
+        width: 100%;
+    }
+
+    #search-form__input {
+        width: 100%;
+    }
+
+    .menu {
+        width: 78%;
+        display: flex;
+        justify-content: space-between;
+        li {
+            a {
+                font-size: 15px;
+            }
+        }
     }
 
     .account {
