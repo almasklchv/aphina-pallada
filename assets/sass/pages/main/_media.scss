@@ -518,3 +518,18 @@
         }
     }
 }
+
+@media (max-width: 380px) {
+    .burger-menu {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .burger-menu__content {
+        width: 100%;
+    }
+
+    .search-form {
+        width: 91%;
+    }
+}

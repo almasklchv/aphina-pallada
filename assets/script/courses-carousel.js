@@ -31,14 +31,17 @@ export function updateVisibleItems (item) {
             }
         }
     }
+
     if (parentWidth <= 677.2) {
         popularCourses.style.left = '';
         newCourses.style.left = '';
+        for (let i = 0; i < item.children[0].children.length; i++) {
+            item.children[0].children[i].style.marginRight = '0px';
+        }
     }
 
-    if (parentWidth >= 253) {
+    if (parentWidth >= 528) {
         for (let i = 0; i < item.children[0].children.length; i++) {
-            console.log(item.children[0].children[i].children)
             item.children[0].children[i].style.marginRight = '30px';
         }
     }
