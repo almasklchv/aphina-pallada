@@ -11,6 +11,21 @@
   font-size: 35px;
   line-height: 42.67px;
   color: #ffffff;
+
+  a {
+    text-shadow: 0px 2px 6px rgba(255, 255, 255, 0.25);
+  }
+
+ 
+
+  a:hover::after {
+    content: '↵';
+    color: #4CAF50;
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+  
 }
 
 .dropdown-menu {

@@ -134,14 +134,12 @@
     }
 }
 
-.course-review::before {
-    content: '';
+.profile-photo {
     float: left;
     width: 45px;
     height: 45px;
     margin-right: 13px;
     margin-top: 5px;
-    background: url('../icons/avatar.png');
 }
 
 .review-name {
