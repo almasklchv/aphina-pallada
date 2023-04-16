@@ -9,9 +9,15 @@
 
 // layout 
 @import './layout/header';
+@import './layout/footer';
 
 // components
 @import './components/courses-carousel';
+@import './components/mega-banner';
+@import './components/form-container';
+@import './components/course-page';
+@import './components/premium-page';
+@import './components/burger-menu';
 
 // pages
-@import './pages/main/media'
+@import './pages/main/media';

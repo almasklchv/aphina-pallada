@@ -1,8 +1,10 @@
 .left-btn {
     position: relative;
     cursor: pointer;
-    margin-left: 16px;
-    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -72px;
+    top: 133px;
     float: left;
     width: 16.4px;
     height: 45px;
@@ -13,30 +15,68 @@
 .right-btn {
     position: relative;
     cursor: pointer;
-    margin-right: 16px;
+    margin-right: 13px;
     margin-top: -132px;
     top: 202px;
     float: right;
     width: 16.4px;
     height: 45px;
     background: url('../icons/right-btn.svg');
+    z-index: 10;
 }
 
-.courses {
-    display: flex;
-    justify-content: center;
+.courses-carousel {
+    margin: 0 auto;
+    overflow: hidden;
 }
+
+.popular-courses, .new-courses {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 66px;
+    margin-right: -30px;
+}
+
+.all-courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 62px;
+    .course {
+        margin-bottom: 18px;
+    }
+}
+
+
 
 .course {
-    margin-right: 30px;
+    height: 255px;
     transition: all 0.5s ease-in-out;
 }
 
+.all-courses {
+    a {
+        .course {
+            margin-right: 30px;
+        }
+    }
+}
+
+.course:hover {
+    .course__preview {
+        box-shadow:0 0 8px #fff;
+        
+    }
+}
+
+
 .course__preview {
-    width: 329px;
-    height: 185px;
+    height: 190px;
     border-radius: 20px;
-    border: 1px solid rgba(217,217,217, 0.2);
+    
 }
 
 .course__title {
@@ -59,6 +99,5 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.6);
 }

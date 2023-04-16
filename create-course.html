@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      type="image/x-icon"
+      href="./assets/icons/favicon.png"
+      rel="shortcut icon"
+    />
+    <link
+      type="Image/x-icon"
+      href="./assets/icons/favicon.png"
+      rel="icon"
+    />
+    <title>Создание курса - Pandela</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo"><a href="/"><span style="color: #4CAF50;">Pand</span>ela</a></h1>
+        <!-- Логотип -->
+  
+        <div class="dropdown-menu">
+          <!-- Выпадающее меню (при ширине <= 1512px) -->
+          <div class="dropdown-menu__btn">
+            <p>Категории</p>
+            <span class="dropdown-menu__icon"></span>
+          </div>
+          <div class="dropdown-menu__content hidden">
+            <p><a href="#">Программирование</a></p>
+            <p><a href="#">Дизайн</a></p>
+            <p><a href="#">Маркетинг</a></p>
+          </div>
+        </div>
+        <nav class="navigation">
+          <!-- Простое меню (при ширине > 1512px) -->
+          <ul class="menu">
+            <li><a href="#">Программирование</a></li>
+            <li><a href="#">Дизайн</a></li>
+            <li><a href="#">Маркетинг</a></li>
+          </ul>
+        </nav>
+  
+        <form class="search-form" action="#">
+          <!-- Форма поиска -->
+          <span class="search_ico"></span>
+          <input
+            type="text"
+            name="search"
+            id="search-form__input"
+            placeholder="Искать"
+            autocomplete="off"
+          />
+        </form>
+  
+        <div class="login">
+          <!-- Кнопка входа -->
+          <a href="./login.html">
+            <span class="login_ico login_no-hover"></span>
+            <span class="header_text">Войти</span>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <div class="form-container">
+            <p class="form__title">Создание курса</p>
+            
+            <form class="form" >
+                <label for="title">Заголовок</label>
+                <input class="form__text-input" type="text" name="title" id="title" autocomplete="off" required>
+                <br>
+                <label for="course-description">Описание</label>
+                <input class="form__text-input" type="text" name="course-description" id="course-description" autocomplete="off" required>
+                <br>
+                <label for="#">Выберите категорию</label>
+                <select class="choose-category">
+                    <option></option>
+                    <option value="programming">Программирование</option>
+                    <option value="design">Дизайн</option>
+                    <option value="marketing">Маркетинг</option>
+                </select>
+                <label for="#">Добавить заставку</label>
+                <div class="choose-file">
+                    <input class="form__btn form__btn-2" type="submit" value="Выберите файл" name="splash-screen" id="splash-screen">
+                    <span class="file-name">Файл не выбран</ы>
+                </div>
+                <br>
+                <input class="form__btn form__btn-4" type="submit" value="Опубликовать">
+              </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="left">
+          <h1 class="logo"><a href="/"><span style="color: #4CAF50;">Pand</span>ela</a></h1>
+          <ul class="menu">
+            <li><a href="../../premium.html">Оформить подписку</a></li>
+            <li><a href="#">Выложить свой курс</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+  
+        <div class="right">
+           <div class="social-media-group">
+            <a href="#"><span class="social-media-group__item tiktok_ico"></span></a>
+            <a href="#"><span class="social-media-group__item vk_ico"></span></a>
+            <a href="#"><span class="social-media-group__item instagram_ico"></span></a>
+           </div>
+           <p>© 2022 Все права защищены</p>
+        </div>
+        
+      </footer>
+  
+      <script type="module" src="./assets/script/main.js"></script>
+</body>
+</html>
