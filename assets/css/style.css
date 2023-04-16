@@ -1437,7 +1437,7 @@ footer .menu li {
     margin-left: -23px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   .burger-menu {
     width: 100%;
     padding-right: 0;
