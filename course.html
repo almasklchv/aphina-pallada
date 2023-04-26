@@ -15,6 +15,7 @@
       href="./assets/icons/favicon.png"
       rel="icon"
     />
+    <script src="./assets/script/playerjs-1.js"></script>
     <title>Страница курса - Pandela</title>
   </head>
   <body>
@@ -112,12 +113,12 @@
             <p class="course__likes">100% Нравится(3 Отзыва)</p>
           </div>
           <div class="right">
-            <div class="course__poster">
+            <!--<div class="course__poster">
               <img class="poster" src="./assets/images/preview.png" alt="Обложка к видео">
               <span class="control play"></span>
               <video class="video-player" src="./assets/video/первый рилс.mp4"></video>
-            </div>
-            
+            </div> -->
+            <div class="video-player" id="player"></div>
           </div>
         </div>
 
@@ -186,5 +187,8 @@
     </footer>
 
     <script type="module" src="./assets/script/main.js"></script>
+    <script>
+      let player = new Playerjs({id:"player", file:"./assets/video/первый рилс.mp4"});
+    </script>
   </body>
 </html>
