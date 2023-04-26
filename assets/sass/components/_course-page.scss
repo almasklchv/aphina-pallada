@@ -23,7 +23,7 @@
         background-image: url('../icons/star.svg');
     }
 }
-
+/*
 .course__poster {
     width: 658px;
     height: 370px;
@@ -42,8 +42,17 @@
     width: 658px;
     height: 370px;
     border-radius: 32px;
-}
+}*/
 
+.video-player {
+    width: 658px;
+    height: 370px;
+    margin-top: 33px;
+    position: relative;
+    left: 31px;
+
+}
+/*
 .control {
     cursor: pointer;
     position: absolute;
@@ -62,7 +71,7 @@
 .pause {
     z-index: 10;
     background: url('../icons/pause-video.svg');
-}
+}*/
 
 .course-welcome {
     display: flex;
