@@ -136,6 +136,24 @@
 
         <div class="course-reviews">
           <h2 class="title">Отзывы</h2>
+          <form class="course-reviews__write-review">
+            <h2 class="title">Этот курс понравился 0% пользователей. (1 Голос)</h2>
+            <label for="rating" class="course-reviews__your-review">Ваша оценка курсу:</label>
+            <select name="rating" class="choose-category">
+              <option></option>
+              <option value="1">Ужасно</option>
+              <option value="4">Нормально</option>
+              <option value="6">Хорошо</option>
+              <option value="8">Отлично</option>
+              <option value="10">Потрясающе</option>
+            </select>
+            <br>
+            <label class="course-review__for-comment" for="comment">Добавить комментарий с вашим голосом</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+            <br>
+            <input class="form__btn" type="submit" value="Написать отзыв">
+          </form>
           <div class="course-reviews__content">
             <div class="course-review">
               <img class="profile-photo" src="./assets/icons/avatar.png">

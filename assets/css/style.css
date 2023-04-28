@@ -757,6 +757,7 @@ footer .menu li {
 }
 .course-reviews .title {
   margin: 0;
+  margin-bottom: 36px;
 }
 
 .profile-photo {
@@ -782,6 +783,47 @@ footer .menu li {
   font-size: 16px;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.87);
+}
+
+.course-reviews__write-review .choose-category {
+  width: 122px;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 34px;
+}
+.course-reviews__write-review .form__btn {
+  position: static;
+  margin: 0;
+  padding: 0;
+  margin-left: 97px;
+  margin-top: 30px;
+}
+
+.course-reviews__your-review {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-right: 13px;
+}
+
+.course-review__for-comment {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+#comment {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
 }
 
 .premium-welcome {
