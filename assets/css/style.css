@@ -13,6 +13,10 @@ h1 {
   opacity: 0.87;
 }
 
+textarea {
+  resize: none;
+}
+
 .title {
   font-family: "Montserrat";
   font-weight: 700;
